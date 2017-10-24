@@ -1,5 +1,3 @@
-FROM jenkins/jenkins:lts
+FROM node:8
 
-USER root
-
-RUN apt-get update && apt-get install -y libltdl7 && rm -rf /var/lib/apt/lists/*
+npm install -g serverless@1.23.0
