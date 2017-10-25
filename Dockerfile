@@ -1,4 +1,4 @@
-FROM node:8
+FROM node:8.7.0
 
 RUN apt-get update && apt-get -y install python-dev python-pip && pip install awscli
 
